@@ -230,7 +230,7 @@ author:
 #   text by adding the "origin" prefix (e.g. origin:sf, then "sf" will be show).
 social:
   github: https://github.com/aslzd123/ || github
-  google: https://plus.google.com/ || google
+  csdn: https://blog.csdn.net/aslzd123/ || origin:csdn
   # twitter: https://twitter.com/ || twitter
   # youtube: https://youtube.com/ || youtube
   # segmentfault: https://segmentfault.com/ || origin:sf

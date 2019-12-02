@@ -47,6 +47,7 @@ menu:
   tags: /tags/ || tags
   about: /about/ || user
   reading: /reading/ || book
+  friend: /friend/ || friend
   # xxx: /xxx/ || xxx
   # You can add a secondary menu like follow.
   # xxx: javascript:; || xxx
@@ -230,12 +231,12 @@ author:
 #   text by adding the "origin" prefix (e.g. origin:sf, then "sf" will be show).
 social:
   github: https://github.com/aslzd123/ || github
-  google: https://plus.google.com/ || google
+  csdn: https://blog.csdn.net/aslzd123/ || origin:csdn
   # twitter: https://twitter.com/ || twitter
   # youtube: https://youtube.com/ || youtube
   # segmentfault: https://segmentfault.com/ || origin:sf
   # weibo: https://weibo.com/ || weibo
-  zhihu: https://www.zhihu.com/people/liu-zhen-dong-29-69/activities || zhihu
+  zhihu: https://www.zhihu.com/people/liu-zhen-dong-29-69/activities || origin:知
   # wechat: yournumber || weixin
   # telegram: yournumber || telegram
   # qq: 1475262388 || qq
@@ -325,10 +326,10 @@ post_list:
   # Whether to paginate.
   paginate:
     home: true
-    archives: false
+    archives: true
   # Whether to show the cover image of post.
   cover_image:
-    home: false
+    home: true
 
 # The widget of post.
 post_widget:
@@ -408,25 +409,25 @@ gitalk:
 # Valine
 # See: https://valine.js.org/quickstart.html
 valine:
-  enable: false
+  enable: true
   # Your leancloud application appid.
-  appid:
+  appid: j7VvsC2LrW8WgX5nBIR81ixM-gzGzoHsz
   # Your leancloud application appkey.
-  appkey:
+  appkey: lSAxu8h8Flol9rdqXSO0jA3i
   # Mail notifier.
-  notify: true
+  notify: false
   # Verification code.
-  verify: true
+  verify: false
   # Comment box placeholder.
-  placeholder: Just go go
+  placeholder: 请在此输入您的留言
   # Gravatar style.
   avatar: mp
   # Custom comment header.
-  meta: nick,mail,link
+  meta: nick,link
   # Pagination size.
   pageSize: 10
   # Article reading statistics.
-  visitor: false
+  visitor: true
   # Whether to record the commenter IP.
   recordIP: false
   # language, available values: en, zh-cn.
@@ -499,7 +500,7 @@ algolia_search:
 # Local Search
 # See: https://github.com/wzpan/hexo-generator-search/
 local_search:
-  enable: false
+  enable: true
 
 # ---------------------------------------------------------------
 # Background config
@@ -519,7 +520,7 @@ canvas_ribbon:
 # Canvas-nest
 # Dependencies: https://github.com/hustcc/canvas-nest.js
 canvas_nest:
-  enable: false
+  enable: true
   # Display on mobile or not
   onmobile: true
   # RGB values, use ',' to separate
@@ -806,3 +807,8 @@ cdn:
   # Example:
   # pjax: //cdn.jsdelivr.net/npm/pjax@latest/pjax.min.js
   pjax:
+  
+  search:
+  path: search.json
+  field: post
+  content: true
